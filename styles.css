@@ -587,21 +587,40 @@ footer {
     border-color: var(--primary-light);
 }
 
+.section-link-card-soft {
+    border-radius: 8px;
+    padding: 1.1rem 1.15rem;
+    border: 1px solid #dbe6f3;
+    box-shadow: none;
+    background: #fbfdff;
+}
+
+.section-link-card-soft:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: #9bb6d9;
+    background: #f7fbff;
+}
+
 .section-link-card h3 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.35rem;
     color: var(--primary-color);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .section-link-card p {
     color: var(--text-light);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.45rem;
+    font-size: 0.95rem;
+    line-height: 1.55;
 }
 
 .card-cta {
-    font-size: 0.9rem;
-    color: var(--primary-light);
-    font-weight: 600;
+    font-size: 0.92rem;
+    color: #2563eb;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
 .compact-list .funded-research-item {
