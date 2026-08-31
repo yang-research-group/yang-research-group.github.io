@@ -346,6 +346,71 @@ h1, h2, h3 {
     border-left-style: solid;
 }
 
+/* Funded Research */
+.funded-research-list {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.funded-research-item {
+    display: flex;
+    gap: 2rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--section-accent, var(--primary-color));
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.funded-research-item:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.funded-year {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--section-accent, var(--primary-color));
+    white-space: nowrap;
+    min-width: 100px;
+    padding-top: 0.25rem;
+}
+
+.funded-details h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.funding-agency {
+    font-weight: 600;
+    color: var(--section-accent, var(--primary-color));
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+}
+
+.funding-info {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.grant-number,
+.role,
+.amount,
+.period {
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.role {
+    font-weight: 600;
+    color: var(--text-main);
+}
+
 /* Publications */
 .publication-list {
     max-width: 900px;
@@ -463,5 +528,15 @@ footer {
     .project-item {
         flex-direction: column;
         gap: 0.5rem;
+    }
+
+    .funded-research-item {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .funded-year {
+        min-width: auto;
+        margin-bottom: 0.5rem;
     }
 }
