@@ -961,24 +961,95 @@ h1, h2, h3 {
     font-size: 0.9rem;
 }
 
-/* Contact */
-.contact-container {
-    text-align: center;
-    max-width: 600px;
+/* Academic Contact Section */
+.section-contact {
+    background: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    padding: 4.5rem 0;
 }
 
-.contact-info h2 {
-    color: white;
+.contact-academic-box {
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    gap: 3.5rem;
+    background: white;
+    padding: 2.75rem 3rem;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
 }
 
-.contact-info p {
-    color: #a0aec0;
-    margin-bottom: 2rem;
+.contact-academic-col h3 {
+    font-size: 1.35rem;
+    color: var(--primary-color);
+    margin-bottom: 0.35rem;
+    font-weight: 700;
 }
 
-.contact-details p {
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
+.contact-affiliation {
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 0.6rem;
+    font-size: 0.98rem;
+}
+
+.contact-academic-col p {
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.contact-meta-item {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 0.85rem;
+    font-size: 0.95rem;
+    align-items: baseline;
+}
+
+.contact-meta-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-meta-item strong {
+    min-width: 155px;
+    color: #64748b;
+    font-weight: 600;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    flex-shrink: 0;
+}
+
+.contact-meta-item span {
+    color: #1e293b;
+}
+
+.contact-meta-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-meta-item a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .contact-academic-box {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 1.75rem;
+    }
+
+    .contact-meta-item {
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .contact-meta-item strong {
+        min-width: auto;
+    }
 }
 
 /* Footer */
