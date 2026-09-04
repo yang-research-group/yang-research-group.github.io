@@ -611,37 +611,31 @@ h1, h2, h3 {
 .director-contact-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1rem;
+    gap: 1.25rem;
     margin-bottom: 1.75rem;
-    background: #fbfbfe;
+    background: #f8fafc;
     padding: 1.25rem 1.5rem;
-    border-radius: 10px;
-    border: 1px solid #ecf0f8;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
 }
 
 .contact-item {
     display: flex;
-    align-items: flex-start;
-    gap: 0.75rem;
-}
-
-.contact-icon {
-    font-size: 1.2rem;
-    line-height: 1.4;
+    flex-direction: column;
+    gap: 0.25rem;
 }
 
 .contact-item strong {
     display: block;
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    color: var(--text-light);
-    margin-bottom: 0.15rem;
+    color: #64748b;
 }
 
 .contact-item p {
     margin: 0;
-    font-size: 0.92rem;
+    font-size: 0.95rem;
     color: var(--text-main);
 }
 
